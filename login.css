@@ -1,0 +1,95 @@
+.video-container{
+    width: 100%;
+    height: 100%;
+  }
+  
+   iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+h1{
+    background:  hsla(0,0%,100%,0.7);
+    padding: 10px;
+    text-align: center;
+    color: rgb(228, 139, 4);
+  }
+
+h2{
+    background:  hsla(0,0%,100%,0.7);
+    padding: 10px;
+    color: rgb(228, 139, 4);
+}
+
+  form {
+	width: 500px;
+	
+	padding: 30px;
+	border-radius: 15px;
+}
+
+input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+    font-size:30px;
+}
+
+label {
+	color: rgb(83, 80, 80);
+	font-size: 25px;
+	padding: 10px;
+}
+
+button {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+    font-size: 25px;
+}
+button:hover{
+	opacity: .7;
+}
+
+a{
+    font-size: 25px  
+}
+
+  .login-container{
+    background-color: hsla(0,0%,100%,0.7);
+    height: 80%;
+    width: 550px;
+    position: absolute;
+    right: 16.7%;
+    top: 13%;
+  }
+
+  .registration-container{
+    background-color: hsla(0,0%,100%,0.7);
+    height: 70%;
+    width: 550px;
+    position: absolute;
+ 
+  }
+@media (min-aspect-ratio: 16/9) {
+    .video-container iframe {
+      height: 56.25vw;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    .video-container iframe {
+      width: 177.78vh;
+    }
+  }
